@@ -1,56 +1,247 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/blitz-block/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blitz-Block — Практический ИИ для каждого</title>
+  <link rel="icon" type="image/svg+xml"
+    href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='4' fill='%231a1a1a'/%3E%3Crect x='8' y='8' width='16' height='16' fill='%23d4ff00'/%3E%3Cpath d='M8 8L24 24' stroke='%231a1a1a' stroke-width='2'/%3E%3C/svg%3E">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Syne:wght@700;800&display=swap"
+    rel="stylesheet">
+
+  <script src="https://unpkg.com/lucide@latest"></script>
     <script type="module" crossorigin src="/blitz-block/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/blitz-block/assets/styles-guStct1H.css">
+    <link rel="stylesheet" crossorigin href="/blitz-block/assets/styles-JxMziVRo.css">
   </head>
   <body>
     <header class="header">
-  <div class="container">
-    <nav class="nav">
-      <a class="nav-logo" href="./index.html" aria-label="Site logo">
-        <svg class="nav-logo-icon" width="100" height="30">
-          <use href="{=$icon-path}"></use>
-        </svg>
-      </a>
-      <ul class="nav-list">
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-act}" href="./page-2.html">Page 2</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-curr}" href="./page-3.html">Page 3</a>
-        </li>
+  <div class="container header__container">
+    <a href="/" class="header__logo">
+      Blitz<span>Block</span>
+    </a>
+
+    <nav class="header__nav">
+      <ul class="header__menu">
+        <li><a href="#home" class="header__link">Главная</a></li>
+        <li><a href="#practices" class="header__link">Практики</a></li>
+        <li><a href="#learning" class="header__link">Обучение</a></li>
+        <li><a href="#innovations" class="header__link">Инновации</a></li>
+        <li><a href="#about" class="header__link">О нас</a></li>
       </ul>
     </nav>
+
+    <a href="#contact" class="header__cta">Связаться</a>
+
+    <button class="header__burger" aria-label="Menu">
+      <span></span>
+    </button>
   </div>
 </header>
 
-
     <main>
       <!-- Loads the specified .html file -->
-      
+      <section class="hero" id="home">
+    <div class="container hero__container">
+        <div class="hero__content">
+            <div class="hero__badge" data-aos="fade-down">Платформа года 2025</div>
+            <h1 class="hero__title">Технологии, которые <br><span>работают на вас</span></h1>
+            <p class="hero__text">
+                AI-инструменты для реальных задач. Постройте карьеру и расширьте горизонты проекта с помощью передовой
+                цифровой инфраструктуры.
+            </p>
+            <div class="hero__btns">
+                <a href="#contact" class="btn btn--primary">Начать сейчас</a>
+                <a href="#about" class="btn btn--secondary">Узнать детали</a>
+            </div>
+        </div>
+        <div class="hero__viz">
+            <div class="hero__circle"></div>
+            <div class="hero__card">
+                <i data-lucide="cpu"></i>
+                <span>Neural Engine Active</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="about" id="about">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">О платформе</h2>
+            <p class="section-subtitle">Решения, которые меняют правила игры</p>
+        </div>
+        <div class="about__grid">
+            <div class="about__text">
+                <p>Blitz-Block — это инновационная технология, созданная для того, чтобы сделать ИИ доступным. Мы верим,
+                    что будущее за теми, кто умеет использовать нейросети как личного ассистента, а не как сложный код.
+                </p>
+                <ul class="about__features">
+                    <li><i data-lucide="check-circle"></i> Легко разобраться без опыта</li>
+                    <li><i data-lucide="check-circle"></i> Подключение занимает 2 минуты</li>
+                    <li><i data-lucide="check-circle"></i> Поддержка по всем вопросам</li>
+                </ul>
+            </div>
+            <div class="about__image">
+                <img src="img/placeholder.png" alt="AI Platform">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="features" id="practices">
+    <div class="container">
+        <div class="features__grid">
+            <div class="feature-card">
+                <div class="feature-card__icon"><i data-lucide="zap"></i></div>
+                <h3 class="feature-card__title">Быстрый старт</h3>
+                <p>Практики, применимые уже сегодня. Никакой лишней теории, только результат.</p>
+            </div>
+            <div class="feature-card accent">
+                <div class="feature-card__icon"><i data-lucide="trending-up"></i></div>
+                <h3 class="feature-card__title">Стратегия роста</h3>
+                <p>Технология для пассивного дохода и автоматизации рутины.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-card__icon"><i data-lucide="shield-check"></i></div>
+                <h3 class="feature-card__title">Безопасность</h3>
+                <p>Платформа уже доступна в Европе с соблюдением всех норм GDPR.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="innovation" id="innovations">
+    <div class="innovation__ticker">
+        <span>Технология нового поколения • Инновационная технология • Передовая цифровая инфраструктура • </span>
+        <span>Технология нового поколения • Инновационная технология • Передовая цифровая инфраструктура • </span>
+    </div>
+</section>
+
+<section class="learning" id="learning">
+    <div class="container">
+        <div class="learning__wrap">
+            <div class="learning__content">
+                <h2 class="section-title">Обучение</h2>
+                <p>Пошаговый путь, понятный каждому. Мы разработали методики, доказавшие эффективность для обычных
+                    людей.</p>
+                <div class="learning__steps">
+                    <div class="step"><span>01</span> Регистрация в 1 клик</div>
+                    <div class="step"><span>02</span> Выбор AI-инструмента</div>
+                    <div class="step"><span>03</span> Первая генерация результата</div>
+                </div>
+                <a href="#contact" class="btn btn--primary">Запросить доступ</a>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="contact" id="contact">
+    <div class="container">
+        <div class="contact__grid">
+            <div class="contact__info">
+                <h2 class="section-title">Есть вопросы?</h2>
+                <p class="contact__text">Получите бесплатную консультацию по всем вопросам внедрения ИИ в вашу
+                    повседневную жизнь. Предложение активно только в странах ЕС.</p>
+
+                <div class="contact__details">
+                    <div class="contact__item">
+                        <strong>Адрес:</strong>
+                        <p>Friedrichstraße 100, 10117 Berlin, DE</p>
+                    </div>
+                    <div class="contact__item">
+                        <strong>Email:</strong>
+                        <p>hello@blitz-block.org</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact__form-wrap">
+                <form class="form" id="ai-form">
+                    <div class="form__group">
+                        <input type="text" name="name" class="form__input" placeholder="Ваше имя" required>
+                    </div>
+                    <div class="form__group">
+                        <input type="email" name="email" class="form__input" placeholder="Email" required>
+                    </div>
+                    <div class="form__group">
+                        <input type="tel" name="phone" id="phone" class="form__input"
+                            placeholder="Телефон (только цифры)" required>
+                    </div>
+
+                    <div class="form__captcha">
+                        <label class="form__label">Сколько будет <span id="captcha-question">...</span>?</label>
+                        <input type="number" id="captcha-answer" class="form__input" placeholder="Ответ" required>
+                    </div>
+
+                    <div class="form__checkbox">
+                        <input type="checkbox" id="agree" required>
+                        <label for="agree">Согласен с обработкой персональных данных</label>
+                    </div>
+
+                    <button type="submit" class="btn btn--primary form__submit">Запросить доступ</button>
+
+                    <div class="form__status" id="form-status"></div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+
     </main>
 
     <footer class="footer">
-  <div class="container">
-    <p class="footer-desc">
-      Made with ✨ by
-      <a
-        class="footer-link"
-        href="https://goit.global/ua/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        GoIT team
-      </a>
-    </p>
+  <div class="container footer__grid">
+    <div class="footer__col">
+      <a href="/" class="footer__logo">Blitz<span>Block</span></a>
+      <p class="footer__description">
+        Технологии, которые работают на вас. Освойте ИИ-инструменты для реальных задач и расширьте свои горизонты.
+      </p>
+    </div>
+
+    <div class="footer__col">
+      <h4 class="footer__title">Навигация</h4>
+      <ul class="footer__list">
+        <li><a href="#home">Главная</a></li>
+        <li><a href="#practices">Практики</a></li>
+        <li><a href="#learning">Обучение</a></li>
+        <li><a href="#about">О нас</a></li>
+      </ul>
+    </div>
+
+    <div class="footer__col">
+      <h4 class="footer__title">Документы</h4>
+      <ul class="footer__list">
+        <li><a href="privacy.html">Privacy Policy</a></li>
+        <li><a href="cookies.html">Cookie Policy</a></li>
+        <li><a href="terms.html">Terms of Service</a></li>
+        <li><a href="disclaimer.html">Disclaimer</a></li>
+      </ul>
+    </div>
+
+    <div class="footer__col">
+      <h4 class="footer__title">Контакты</h4>
+      <ul class="footer__contacts">
+        <li><i data-lucide="phone"></i> +49 30 12345678</li>
+        <li><i data-lucide="mail"></i> hello@blitz-block.org</li>
+        <li><i data-lucide="map-pin"></i> Friedrichstraße 100, 10117 Berlin, Germany</li>
+      </ul>
+    </div>
+  </div>
+  <div class="container footer__bottom">
+    <p>&copy; 2025 Blitz-Block. Все права защищены. Платформа доступна в Европе.</p>
   </div>
 </footer>
-
-
+    <div class="cookie-popup" id="cookie-popup">
+      <div class="cookie-popup__content">
+        <p>Этот сайт использует cookies для улучшения работы. Подробнее — в нашей <a href="./cookies.html">Cookie
+            политике</a>.</p>
+        <button class="btn btn--primary btn--sm" id="cookie-accept">Принять</button>
+      </div>
+    </div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
   </body>
 </html>
