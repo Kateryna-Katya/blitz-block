@@ -247,7 +247,7 @@ ul {
 }
 
 .section-title {
-    font-size: 3rem;
+    font-size: 2rem;
     line-height: 1;
 }
 
@@ -456,7 +456,7 @@ ul {
 /* --- Mobile Adaptive --- */
 @media (max-width: 768px) {
     .hero__title {
-        font-size: 3rem;
+        font-size: 2.4rem;
     }
 
     .hero__container,
